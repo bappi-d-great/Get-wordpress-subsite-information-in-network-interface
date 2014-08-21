@@ -6,7 +6,7 @@ Description: Will shows information about all subsites
 Version: 1.0.1
 Author: Ashok (Incsub)
 Author URI: http://bappi-d-great.com
-License: GNU General Public License (Version 2 - GPLv2)
+License: GNU General Public Licedsnse (Version 2 - GPLv2)
 Network: true
 */
 
@@ -25,7 +25,7 @@ if( ! class_exists( 'SITE_INFO' ) ) {
         }
         
         public function site_info_page_cb() {
-            $sites = wp_get_sites();
+            $sites = wp_get_sites( array( 'limit' => 5000 ) );
             ?>
             <div class="wrap">
                 <h2>Site Information</h2>
